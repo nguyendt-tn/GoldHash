@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 start index.js --no-autorestart"
+    "start": "pm2 start --restart-delay=3000 index.js",
+    "stop": "pm2 stop index.js"
   },
   "repository": {
     "type": "git",
